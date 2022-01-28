@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer type="text/javascript" src="practice.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <title>Coffee Shop Project</title>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <header class="banner">
+      <h1>
+        JavaShop
+        <p class="subtitle">Get it?</p>
+      </h1>
+    </header>
+    <div id="bigDiv">
+      <div id="cart">
+        <h2 id="cartHeader">Cart</h2><br>
+        <div class="cartItems"></div><br>
+        <p class = "totalPriceP">Total: $
+           <span class="totalPrice">0.00</span>
+          </p>
+      </div>
+      <div id="customDrink">
+        <form id = "customDrinkForm">
+          <h3>Create a Custom Drink  <svg class = "coffeeIcon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path d="M14.911 10c-.308 3.325-1.397 5.712-2.948 8h-4.926c-1.373-2.009-2.613-4.372-2.948-8h10.822zm2.089-2h-15c0 5.716 1.826 8.996 4 12h7c2.12-2.911 4-6.333 4-12zm1.119 2c-.057.701-.141 1.367-.252 2h1.549c-.449 1.29-1.5 2.478-2.299 2.914-.358 1.038-.787 1.981-1.26 2.852 3.275-1.143 5.847-4.509 6.143-7.766h-3.881zm-1.119 12h-15v2h15v-2zm-13.062-16c-.747-2.06 1.358-3.683 2.998-2.659 1.006-2.367 4.447-2.131 5.117.353 1.46-1.217 3.735.174 3.079 2.306h1.793c.508-2.551-1.647-4.687-4.076-4.293-.698-1.131-2.071-1.707-3.435-1.707-1.253 0-2.498.486-3.204 1.473-2.508-.329-4.664 1.915-4.091 4.527h1.819z"/></svg></h3>
+         
+
+          <label>Name Your Drink:</label><br>
+          
+          <input name="customDrink" placeholder  = "Enter Name Here" required ></input>
+          <br>
+    
+
+          <label>Select Base:</label>
+          <div class="search_categories">
+            <div class="select">
+          <select id="search_categories" name="base">
+            <option value="latte">Latte </option><div class="arrow">&#9660;</div>
+            <option value="macchiato">Macchiato </option><div class="arrow">&#9660;</div>
+            <option value="cappucino">Cappucino</option><div class="arrow">&#9660;</div>
+            <option value="blackTea">Black Tea</option><div class="arrow">&#9660;</div>
+            <option value="chaiLatte">Chai Latte</option><div class="arrow">&#9660;</div>
+          </select> 
+          </div>
+          </div>
+          <br>
+
+          <label>Size:</label>
+          <div class="search_categories">
+            <div class="select">
+          <select id="search_categories" name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select> 
+        </div>
+      </div>
+          <br>
+
+          <label>Flavors:</label><br>
+          <input name="flavor" placeholder = "What's your flavor?" ></input>
+               <label>
+            <input id = "submit" type="submit" value = "Add to Cart">
+            </input>
+            </label>
+        </form>
+      </div>
+      <div id = "smallDiv">
+      <div id="menuContainer">
+      </div>
+    
+    </div>
+     
+  
+      </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+
+  <footer>Liz Catoe and Nicole Candiotti -- January 2022</footer>
+</html>
